@@ -301,19 +301,19 @@ set_property(CACHE WITH_EIGEN PROPERTY STRINGS NONE AUTOBUILD FIND)
 # endif (UNIX AND NOT APPLE)
 
 # Download the models
-option(DOWNLOAD_BODY_25_MODEL "Download body 25-keypoint (body COCO and 6-keypoint foot) model." ON)
+option(DOWNLOAD_BODY_25_MODEL "Download body 25-keypoint (body COCO and 6-keypoint foot) model." OFF) # ON by default
 option(DOWNLOAD_BODY_COCO_MODEL "Download body 18-keypoint COCO model." OFF)
 option(DOWNLOAD_BODY_MPI_MODEL "Download body 15-keypoint MPI model." OFF)
-option(DOWNLOAD_FACE_MODEL "Download face model." ON)
+option(DOWNLOAD_FACE_MODEL "Download face model." OFF) # ON by default
 option(DOWNLOAD_HAND_MODEL "Download hand model." ON)
 
 # Asio
 # option(USE_ASIO "Include Asio header-only library." OFF)
 
 # More options
-option(BUILD_EXAMPLES "Build OpenPose examples." ON)
+option(BUILD_EXAMPLES "Build OpenPose examples." OFF) # ON by default
 option(BUILD_DOCS "Build OpenPose documentation." OFF)
-option(BUILD_PYTHON "Build OpenPose python." OFF)
+option(BUILD_PYTHON "Build OpenPose python." ON) # OFF by default
 if (WIN32)
   option(BUILD_BIN_FOLDER "Copy all required 3rd-party DLL files into {build_directory}/bin. Disable to save some memory." ON)
 endif (WIN32)

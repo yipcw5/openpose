@@ -311,7 +311,7 @@ option(DOWNLOAD_HAND_MODEL "Download hand model." ON)
 # option(USE_ASIO "Include Asio header-only library." OFF)
 
 # More options
-option(BUILD_EXAMPLES "Build OpenPose examples." OFF) # ON by default
+option(BUILD_EXAMPLES "Build OpenPose examples." ON)
 option(BUILD_DOCS "Build OpenPose documentation." OFF)
 option(BUILD_PYTHON "Build OpenPose python." ON) # OFF by default
 if (WIN32)
